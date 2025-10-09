@@ -1,6 +1,16 @@
-.menu,
-.menu * {
+.desktop-1,
+.desktop-1 * {
   box-sizing: border-box;
+}
+.desktop-1 {
+  background: var(--soft, #e1ecd5);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow-y: auto;
 }
 .menu {
   padding: 19px 30px 19px 30px;
@@ -82,4 +92,473 @@
   height: 32px;
   position: relative;
   overflow: visible;
+}
+.presentaci-n {
+  padding: 52px 115px 52px 115px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 424px;
+  position: relative;
+}
+.nombre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 412px;
+  height: 125px;
+  position: relative;
+}
+.hola {
+  color: #000000;
+  text-align: left;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+}
+.alicia-valera {
+  color: var(--pop, #e6730f);
+  text-align: center;
+  font-family: var(--title-hero-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--title-hero-font-size, 72px);
+  line-height: var(--title-hero-line-height, 120%);
+  letter-spacing: var(--title-hero-letter-spacing, -0.03em);
+  font-weight: var(--title-hero-font-weight, 700);
+  position: relative;
+}
+.desarrolladora-web-basada-en-madrid {
+  color: var(--marron, #000000);
+  text-align: left;
+  font-family: var(--subheading-font-family, "Inter-Italic", sans-serif);
+  font-size: var(--subheading-font-size, 20px);
+  line-height: var(--subheading-line-height, 120%);
+  font-weight: var(--subheading-font-weight, 400);
+  font-style: var(--subheading-font-style, italic);
+  position: relative;
+}
+.sobre-m {
+  padding: 76px 200px 76px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.descripci-n {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1032px;
+  position: relative;
+}
+.qui-n-soy-yo {
+  color: var(--marron, #442d1b);
+  text-align: center;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.me-dedico-especialmente-al-desarrollo-frontend-y-mis-principales-objetivos-al-programar-son-crear-un-c-digo-limpio-y-eficiente-y-que-la-experiencia-del-usuario-sea-placentera-me-gradu-en-2025-en-el-grado-de-desarrollo-de-aplicaciones-web-en-el-ies-villaverde-y-ahora-estoy-trabajando-en-proyectos-personales {
+  color: var(--texto, #0a0603);
+  text-align: center;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 835px;
+  height: 198px;
+  position: relative;
+}
+.lenguajes-habilidades-y-tecnolog-as {
+  color: var(--marron, #442d1b);
+  text-align: center;
+  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--body-strong-font-size, 16px);
+  line-height: var(--body-strong-line-height, 140%);
+  font-weight: var(--body-strong-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.cosas {
+  flex-shrink: 0;
+  width: 771px;
+  height: 154px;
+  position: static;
+}
+.java-jdk-18-javascript-typescript-html-css-php-sql-mongo-db {
+  color: var(--texto, #0a0603);
+  text-align: left;
+  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
+  font-size: var(--body-emphasis-font-size, 16px);
+  line-height: var(--body-emphasis-line-height, 140%);
+  font-weight: var(--body-emphasis-font-weight, 400);
+  font-style: var(--body-emphasis-font-style, italic);
+  position: absolute;
+  left: 32px;
+  top: 42px;
+  width: 268px;
+}
+.vs-code-eclipse-wordpress-elementor-chrome-dev-tools-my-sql-git-git-hub {
+  color: var(--texto, #0a0603);
+  text-align: left;
+  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
+  font-size: var(--body-emphasis-font-size, 16px);
+  line-height: var(--body-emphasis-line-height, 140%);
+  font-weight: var(--body-emphasis-font-weight, 400);
+  font-style: var(--body-emphasis-font-style, italic);
+  position: absolute;
+  left: 669px;
+  top: 42px;
+}
+.react-laravel-astro-node-js-figma-bash-docker {
+  color: var(--texto, #0a0603);
+  text-align: left;
+  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
+  font-size: var(--body-emphasis-font-size, 16px);
+  line-height: var(--body-emphasis-line-height, 140%);
+  font-weight: var(--body-emphasis-font-weight, 400);
+  font-style: var(--body-emphasis-font-style, italic);
+  position: absolute;
+  left: 405px;
+  top: 42px;
+}
+.frame-12 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.ver-cv-completo {
+  color: var(--pop, #e6730f);
+  text-align: center;
+  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--body-strong-font-size, 16px);
+  line-height: var(--body-strong-line-height, 140%);
+  font-weight: var(--body-strong-font-weight, 600);
+  position: relative;
+}
+.external-link {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.proyectos2 {
+  padding: 76px 200px 76px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.proyectos-destacados {
+  color: var(--marron, #442d1b);
+  text-align: center;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.contacto2 {
+  padding: 100px 200px 100px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 880px;
+  position: relative;
+  overflow: hidden;
+}
+.t-tulo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1032px;
+  position: relative;
+}
+.contacto3 {
+  color: var(--marron, #442d1b);
+  text-align: center;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.adem-s-de-por-linkedin-pod-is-rellenar-el-siguiente-formulario-de-contacto-o-enviar-un-email-a-valerarojoalicia-gmail-com-e-intentar-responder-lo-antes-posible {
+  text-align: center;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  width: 1032px;
+  height: 66px;
+}
+.adem-s-de-por-linkedin-pod-is-rellenar-el-siguiente-formulario-de-contacto-o-enviar-un-email-a-valerarojoalicia-gmail-com-e-intentar-responder-lo-antes-posible-span {
+  color: var(--texto, #0a0603);
+}
+.adem-s-de-por-linkedin-pod-is-rellenar-el-siguiente-formulario-de-contacto-o-enviar-un-email-a-valerarojoalicia-gmail-com-e-intentar-responder-lo-antes-posible-span2 {
+  color: var(--pop, #e6730f);
+}
+.form-contact {
+  background: var(--var-sds-color-background-default-default, #ffffff);
+  border-radius: var(--var-sds-size-radius-200, 8px);
+  border-style: solid;
+  border-color: var(--var-sds-color-border-default-default, #d9d9d9);
+  border-width: 1px;
+  padding: var(--var-sds-size-space-600, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--var-sds-size-space-600, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  min-width: 320px;
+  position: relative;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.label {
+  color: var(--var-sds-color-text-default-default, #1e1e1e);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.input {
+  background: var(--var-sds-color-background-default-default, #ffffff);
+  border-radius: var(--var-sds-size-radius-200, 8px);
+  border-style: solid;
+  border-color: var(--var-sds-color-border-default-default, #d9d9d9);
+  border-width: 1px;
+  padding: var(--var-sds-size-space-300, 12px)
+    var(--var-sds-size-space-400, 16px) var(--var-sds-size-space-300, 12px)
+    var(--var-sds-size-space-400, 16px);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 240px;
+  position: relative;
+  overflow: hidden;
+}
+.value {
+  color: var(--var-sds-color-text-default-tertiary, #b3b3b3);
+  text-align: left;
+  font-family: var(
+    --single-line-body-base-font-family,
+    "Inter-Regular",
+    sans-serif
+  );
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 100%);
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.textarea {
+  background: var(--var-sds-color-background-default-default, #ffffff);
+  border-radius: var(--var-sds-size-radius-200, 8px);
+  border-style: solid;
+  border-color: var(--var-sds-color-border-default-default, #d9d9d9);
+  border-width: 1px;
+  padding: var(--var-sds-size-space-300, 12px)
+    var(--var-sds-size-space-400, 16px) var(--var-sds-size-space-300, 12px)
+    var(--var-sds-size-space-400, 16px);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 240px;
+  min-height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.value2 {
+  color: var(--var-sds-color-text-default-tertiary, #b3b3b3);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.drag {
+  flex-shrink: 0;
+  width: 6.63px;
+  height: 6.63px;
+  position: absolute;
+  right: 5.02px;
+  bottom: 6.02px;
+  overflow: visible;
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-400, 16px);
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button {
+  background: var(--var-sds-color-background-brand-default, #2c2c2c);
+  border-radius: var(--var-sds-size-radius-200, 8px);
+  border-style: solid;
+  border-color: var(--var-sds-color-border-brand-default, #2c2c2c);
+  border-width: 1px;
+  padding: var(--var-sds-size-space-300, 12px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.button2 {
+  color: var(--var-sds-color-text-brand-on-brand, #f5f5f5);
+  text-align: left;
+  font-family: var(
+    --single-line-body-base-font-family,
+    "Inter-Regular",
+    sans-serif
+  );
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 100%);
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  position: relative;
+}
+.footer {
+  background: var(--marron, #442d1b);
+  padding: 50px 85px 50px 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 181px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-13 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.p-gina-dise-ada-utilizando-figma-para-luego-ser-desarrollada-en-por-alicia-valera {
+  color: var(--soft, #e1ecd5);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  width: 383.6px;
+}
+.ver-c-digo-en-git-hub {
+  color: var(--soft, #e1ecd5);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  width: 175.15px;
+}
+.volver-arriba {
+  color: var(--soft, #e1ecd5);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 16px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
 }
