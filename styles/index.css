@@ -7,6 +7,16 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+#move{
+    background: radial-gradient(circle 50px,#bedc9e, #e1ecd5);
+    height: 300px;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
 main,
 main * {
   box-sizing: border-box;
