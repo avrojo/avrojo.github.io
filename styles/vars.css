@@ -1,4 +1,3 @@
-/* Figma Styles of your File */
 :root {
   /* Colors */
   --texto: #0a0603;
@@ -8,6 +7,12 @@
   --claro: #decdf5;
 
   /* Fonts */
-  /* Effects */
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
 }
-/* Figma Color Variables of your File */
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
