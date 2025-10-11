@@ -7,16 +7,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-#move {
-  background: radial-gradient(circle 100px, #cbe5af, #e1ecd5);
-  height: 500px;
-  aspect-ratio: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-}
-
 main,
 main * {
   box-sizing: border-box;
@@ -29,6 +19,31 @@ main {
   justify-content: center;
   position: relative;
 }
+
+p{
+  color: var(--texto, #0a0603);
+  text-align: center;
+}
+
+a {
+  color: var(--texto, #0a0603);
+	text-decoration: none;
+	outline: none;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#move {
+  background: radial-gradient(circle 100px, #b5d296, #e1ecd5);
+  height: 500px;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: -1;
+}
+
 .menu {
   padding: 19px 50px 19px 30px;
   display: flex;
@@ -36,11 +51,13 @@ main {
   align-items: center;
   justify-content: space-between;
   align-self: stretch;
-  flex-shrink: 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
+  backdrop-filter: blur(10px);
 }
+
 .avrojo {
   color: var(--marron, #442d1b);
   text-align: center;
@@ -50,63 +67,24 @@ main {
   font-weight: 700;
   position: relative;
 }
-.frame-1 {
+.menu-items {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  font-size: 16px;
   align-items: center;
   justify-content: flex-end;
   flex-shrink: 0;
   position: relative;
 }
-.qui-n-soy {
-  color: #000000;
-  text-align: left;
-  font-family: var(--subheading-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--subheading-font-size, 20px);
-  line-height: var(--subheading-line-height, 120%);
-  font-weight: var(--subheading-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.proyectos {
-  color: #000000;
-  text-align: left;
-  font-family: var(--subheading-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--subheading-font-size, 20px);
-  line-height: var(--subheading-line-height, 120%);
-  font-weight: var(--subheading-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.contacto {
-  color: #000000;
-  text-align: left;
-  font-family: var(--subheading-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--subheading-font-size, 20px);
-  line-height: var(--subheading-line-height, 120%);
-  font-weight: var(--subheading-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.github {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+
+.icon{
+    flex-shrink: 0;
+  width: 24px;
+  height: 24px;
   position: relative;
 }
-.linkedin {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  position: relative;
-}
+
 .presentacion {
   padding: 52px 115px 52px 115px;
   display: flex;
@@ -163,8 +141,8 @@ main {
   font-style: var(--subheading-font-style, italic);
   position: relative;
 }
-.sobre-m {
-  padding: 76px 200px 76px 200px;
+#sobre-mi {
+  padding: 100px 200px 76px 200px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -293,8 +271,8 @@ main {
   height: 20px;
   position: relative;
 }
-.proyectos2 {
-  padding: 76px 200px 76px 200px;
+#proyectos {
+  padding: 100px 200px 76px 200px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -315,7 +293,7 @@ main {
   position: relative;
   align-self: stretch;
 }
-.contacto2 {
+#contacto {
   padding: 100px 200px 100px 200px;
   display: flex;
   flex-direction: column;
