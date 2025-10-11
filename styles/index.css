@@ -23,6 +23,7 @@ main {
 p{
   color: var(--texto, #0a0603);
   text-align: center;
+  font-size: 16px;
 }
 
 a {
@@ -31,6 +32,28 @@ a {
 	outline: none;
   margin-bottom: 5px;
   text-align: center;
+}
+
+.icon{
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.title{
+  color: var(--marron, #442d1b);
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.accent {
+  color: var(--marron, #442d1b);
+  font-family: "Inter-Italic", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #move {
@@ -78,12 +101,6 @@ a {
   position: relative;
 }
 
-.icon{
-    flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
 
 .presentacion {
   padding: 52px 115px 52px 115px;
@@ -97,6 +114,7 @@ a {
   height: 90vh;
   position: relative;
 }
+
 .nombre {
   display: flex;
   flex-direction: column;
@@ -108,15 +126,7 @@ a {
   height: 125px;
   position: relative;
 }
-.hola {
-  color: #000000;
-  text-align: left;
-  font-size: var(--heading-font-size, 24px);
-  line-height: var(--heading-line-height, 120%);
-  letter-spacing: var(--heading-letter-spacing, -0.02em);
-  font-weight: var(--heading-font-weight, 600);
-  position: relative;
-}
+
 .alicia-valera {
   text-align: center;
   font-size: 72px;
@@ -131,16 +141,7 @@ a {
   -moz-background-clip: text;
   background-clip: text;
 }
-.desarrolladora-web-basada-en-madrid {
-  color: var(--marron, #000000);
-  text-align: left;
-  font-family: var(--subheading-font-family, "Inter-Italic", sans-serif);
-  font-size: var(--subheading-font-size, 20px);
-  line-height: var(--subheading-line-height, 120%);
-  font-weight: var(--subheading-font-weight, 400);
-  font-style: var(--subheading-font-style, italic);
-  position: relative;
-}
+
 #sobre-mi {
   padding: 100px 200px 76px 200px;
   display: flex;
@@ -161,17 +162,6 @@ a {
   flex-shrink: 0;
   width: 1032px;
   position: relative;
-}
-.qui-n-soy-yo {
-  color: var(--marron, #442d1b);
-  text-align: center;
-  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
-  font-size: var(--heading-font-size, 24px);
-  line-height: var(--heading-line-height, 120%);
-  letter-spacing: var(--heading-letter-spacing, -0.02em);
-  font-weight: var(--heading-font-weight, 600);
-  position: relative;
-  align-self: stretch;
 }
 .me-dedico-especialmente-al-desarrollo-frontend-y-mis-principales-objetivos-al-programar-son-crear-un-c-digo-limpio-y-eficiente-y-que-la-experiencia-del-usuario-sea-placentera-me-gradu-en-2025-en-el-grado-de-desarrollo-de-aplicaciones-web-en-el-ies-villaverde-y-ahora-estoy-trabajando-en-proyectos-personales {
   color: var(--texto, #0a0603);
@@ -282,17 +272,7 @@ a {
   flex-shrink: 0;
   position: relative;
 }
-.proyectos-destacados {
-  color: var(--marron, #442d1b);
-  text-align: center;
-  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
-  font-size: var(--heading-font-size, 24px);
-  line-height: var(--heading-line-height, 120%);
-  letter-spacing: var(--heading-letter-spacing, -0.02em);
-  font-weight: var(--heading-font-weight, 600);
-  position: relative;
-  align-self: stretch;
-}
+
 #contacto {
   padding: 100px 200px 100px 200px;
   display: flex;
@@ -314,17 +294,6 @@ a {
   flex-shrink: 0;
   width: 1032px;
   position: relative;
-}
-.contacto3 {
-  color: var(--marron, #442d1b);
-  text-align: center;
-  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
-  font-size: var(--heading-font-size, 24px);
-  line-height: var(--heading-line-height, 120%);
-  letter-spacing: var(--heading-letter-spacing, -0.02em);
-  font-weight: var(--heading-font-weight, 600);
-  position: relative;
-  align-self: stretch;
 }
 .adem-s-de-por-linkedin-pod-is-rellenar-el-siguiente-formulario-de-contacto-o-enviar-un-email-a-valerarojoalicia-gmail-com-e-intentar-responder-lo-antes-posible {
   text-align: center;
