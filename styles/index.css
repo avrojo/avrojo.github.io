@@ -1,8 +1,8 @@
+/* GENERAL */
 html {
   background: var(--soft, #e1ecd5);
   scrollbar-width: none;
 }
-
 html::-webkit-scrollbar {
   display: none;
 }
@@ -20,7 +20,7 @@ main {
   position: relative;
 }
 
-p{
+p {
   color: var(--texto, #0a0603);
   text-align: center;
   font-size: 16px;
@@ -28,24 +28,26 @@ p{
 
 a {
   color: var(--texto, #0a0603);
-	text-decoration: none;
-	outline: none;
+  text-decoration: none;
+  outline: none;
   margin-bottom: 5px;
   text-align: center;
 }
 
-.icon{
+/* Clases ! */
+.icon {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
   position: relative;
 }
 
-.title{
+.title {
   color: var(--marron, #442d1b);
   font-size: 24px;
   letter-spacing: -0.02em;
   font-weight: 700;
+  text-align: center;
 }
 
 .accent {
@@ -56,6 +58,7 @@ a {
   font-style: italic;
 }
 
+/* Cursor */
 #move {
   background: radial-gradient(circle 100px, #b5d296, #e1ecd5);
   height: 500px;
@@ -67,6 +70,7 @@ a {
   z-index: -1;
 }
 
+/* Top menu */
 .menu {
   padding: 19px 50px 19px 30px;
   display: flex;
@@ -101,7 +105,7 @@ a {
   position: relative;
 }
 
-
+/* Hero */
 .presentacion {
   padding: 52px 115px 52px 115px;
   display: flex;
@@ -142,8 +146,9 @@ a {
   background-clip: text;
 }
 
+/* Sobre mí */
 #sobre-mi {
-  padding: 100px 200px 76px 200px;
+  padding: 200px 200px 100px 200px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -152,8 +157,9 @@ a {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  flex-wrap: wrap;
 }
-.descripci-n {
+.descripcion {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -162,16 +168,7 @@ a {
   flex-shrink: 0;
   width: 1032px;
   position: relative;
-}
-.me-dedico-especialmente-al-desarrollo-frontend-y-mis-principales-objetivos-al-programar-son-crear-un-c-digo-limpio-y-eficiente-y-que-la-experiencia-del-usuario-sea-placentera-me-gradu-en-2025-en-el-grado-de-desarrollo-de-aplicaciones-web-en-el-ies-villaverde-y-ahora-estoy-trabajando-en-proyectos-personales {
-  color: var(--texto, #0a0603);
   text-align: center;
-  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--body-base-font-size, 16px);
-  line-height: var(--body-base-line-height, 140%);
-  font-weight: var(--body-base-font-weight, 400);
-  position: relative;
-  align-self: stretch;
 }
 .lista {
   display: flex;
@@ -179,88 +176,33 @@ a {
   gap: 20px;
   align-items: center;
   justify-content: flex-start;
-  flex-shrink: 0;
-  width: 835px;
   height: 198px;
   position: relative;
 }
-.lenguajes-habilidades-y-tecnolog-as {
-  color: var(--marron, #442d1b);
-  text-align: center;
-  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
-  font-size: var(--body-strong-font-size, 16px);
-  line-height: var(--body-strong-line-height, 140%);
-  font-weight: var(--body-strong-font-weight, 600);
-  position: relative;
-  align-self: stretch;
-}
+
 .cosas {
-  flex-shrink: 0;
-  width: 771px;
-  height: 154px;
-  position: static;
-}
-.java-jdk-18-javascript-typescript-html-css-php-sql-mongo-db {
-  color: var(--texto, #0a0603);
-  text-align: left;
-  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
-  font-size: var(--body-emphasis-font-size, 16px);
-  line-height: var(--body-emphasis-line-height, 140%);
-  font-weight: var(--body-emphasis-font-weight, 400);
-  font-style: var(--body-emphasis-font-style, italic);
-  position: absolute;
-  left: 32px;
-  top: 42px;
-  width: 268px;
-}
-.vs-code-eclipse-wordpress-elementor-chrome-dev-tools-my-sql-git-git-hub {
-  color: var(--texto, #0a0603);
-  text-align: left;
-  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
-  font-size: var(--body-emphasis-font-size, 16px);
-  line-height: var(--body-emphasis-line-height, 140%);
-  font-weight: var(--body-emphasis-font-weight, 400);
-  font-style: var(--body-emphasis-font-style, italic);
-  position: absolute;
-  left: 669px;
-  top: 42px;
-}
-.react-laravel-astro-node-js-figma-bash-docker {
-  color: var(--texto, #0a0603);
-  text-align: left;
-  font-family: var(--body-emphasis-font-family, "Inter-Italic", sans-serif);
-  font-size: var(--body-emphasis-font-size, 16px);
-  line-height: var(--body-emphasis-line-height, 140%);
-  font-weight: var(--body-emphasis-font-weight, 400);
-  font-style: var(--body-emphasis-font-style, italic);
-  position: absolute;
-  left: 405px;
-  top: 42px;
-}
-.frame-12 {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-shrink: 0;
-  position: relative;
 }
-.ver-cv-completo {
+
+.cosas li{
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: rgba(42, 96, 65, 0.7);
+  padding: 0.5em 1em;
+  color: #e3fdee;
+  margin: 5px;;
+
+}
+.cv {
   color: var(--pop, #e6730f);
-  text-align: center;
-  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
-  font-size: var(--body-strong-font-size, 16px);
-  line-height: var(--body-strong-line-height, 140%);
-  font-weight: var(--body-strong-font-weight, 600);
-  position: relative;
+  font-weight: 750;
 }
-.external-link {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-}
+
+/* proyectos! */
 #proyectos {
   padding: 100px 200px 76px 200px;
   display: flex;
