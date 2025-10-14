@@ -306,52 +306,17 @@ background-color: rgba(79, 135, 85, 0.7);
 /*footer*/
 .footer {
   background: var(--marron, #442d1b);
-  padding: 20px 85px 50px 85px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  justify-content: flex-end;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 181px;
-  position: relative;
-}
-.frame-13 {
+  padding: 40px 45px 30px 45px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  gap: 15px;
+  align-items: center;
   justify-content: space-between;
-  align-self: stretch;
-  flex-shrink: 0;
   position: relative;
 }
-.p-gina-dise-ada-utilizando-figma-para-luego-ser-desarrollada-en-por-alicia-valera {
+
+.footer-text {
   color: var(--soft, #e1ecd5);
-  text-align: left;
-  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--body-base-font-size, 16px);
-  line-height: var(--body-base-line-height, 140%);
-  font-weight: var(--body-base-font-weight, 400);
   position: relative;
-  width: 383.6px;
-}
-.ver-c-digo-en-git-hub {
-  color: var(--soft, #e1ecd5);
-  text-align: left;
-  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--body-base-font-size, 16px);
-  line-height: var(--body-base-line-height, 140%);
-  font-weight: var(--body-base-font-weight, 400);
-  position: relative;
-  width: 175.15px;
-}
-.volver-arriba {
-  color: var(--soft, #e1ecd5);
-  text-align: left;
-  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
-  font-size: var(--body-base-font-size, 16px);
-  line-height: var(--body-base-line-height, 140%);
-  font-weight: var(--body-base-font-weight, 400);
-  position: relative;
+  width: 300px;
 }
