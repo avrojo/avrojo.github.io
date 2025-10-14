@@ -1,23 +1,30 @@
 /* GENERAL */
 html {
-  background: var(--soft, #e1ecd5);
   scrollbar-width: none;
 }
 html::-webkit-scrollbar {
   display: none;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 main,
 main * {
   box-sizing: border-box;
-}
+} 
 main {
   display: flex;
   flex-direction: column;
   gap: 0px;
+  width: 100vw;
   align-items: flex-start;
   justify-content: center;
   position: relative;
+  background: var(--soft, #e1ecd5);
 }
 
 p {
@@ -67,12 +74,12 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* Top menu */
 .menu {
-  padding: 19px 50px 19px 30px;
+  padding: 19px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,9 +87,9 @@ a {
   align-self: stretch;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1;
   backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .avrojo {
@@ -183,7 +190,7 @@ a {
 .cosas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .cosas li{
@@ -191,11 +198,21 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background-color: rgba(42, 96, 65, 0.7);
   padding: 0.5em 1em;
   color: #e3fdee;
-  margin: 5px;;
+  margin: 5px;
+}
 
+.lenguaje{
+background-color: rgba(0, 141, 52, 0.7);
+}
+
+.tecnologias{
+background-color: rgba(42, 96, 65, 0.7);
+}
+
+.aptitud{
+background-color: rgba(79, 135, 85, 0.7);
 }
 .cv {
   color: var(--pop, #e6730f);
