@@ -1,6 +1,3 @@
-document.getElementById("MediaClub").style.display = "none";
-document.getElementById("Proximos").style.display = "none";
-
 function openCity(evt, cityName) {
 	// Declare all variables
 	var i, tabcontent, tablinks;
@@ -21,3 +18,5 @@ function openCity(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
