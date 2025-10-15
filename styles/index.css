@@ -41,6 +41,39 @@ a {
   text-align: center;
 }
 
+/* Botón conóceme */
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down:hover {
+  transform: translateY(-5px);
+}
+
+.scroll-down-text {
+  color: var(--marron, #442d1b);
+  font-size: clamp(14px, 3vw, 16px);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.scroll-arrow {
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid var(--pop, #e6730f);
+  border-bottom: 2px solid var(--pop, #e6730f);
+  transform: rotate(-45deg);
+}
+
 /* Clases ! */
 .icon {
   flex-shrink: 0;
@@ -51,7 +84,7 @@ a {
 
 .title {
   color: var(--marron, #442d1b);
-  font-size: 24px;
+  font-size: clamp(20px, 5vw, 24px);
   letter-spacing: -0.02em;
   font-weight: 700;
   text-align: center;
@@ -60,7 +93,7 @@ a {
 .accent {
   color: var(--marron, #442d1b);
   font-family: "Inter-Italic", sans-serif;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   font-weight: 400;
   font-style: italic;
 }
@@ -75,6 +108,7 @@ a {
   transform: translate(-50%, -50%);
   position: fixed;
   z-index: 0;
+  pointer-events: none;
 }
 
 /* Top menu */
@@ -95,12 +129,13 @@ a {
 .avrojo {
   color: var(--marron, #442d1b);
   text-align: center;
-  font-size: 48px;
+  font-size: clamp(32px, 6vw, 48px);
   line-height: 120%;
   letter-spacing: -0.03em;
   font-weight: 700;
   position: relative;
 }
+
 .menu-items {
   display: flex;
   flex-direction: row;
@@ -114,7 +149,7 @@ a {
 
 /* Hero */
 .presentacion {
-  padding: 52px 115px 52px 115px;
+  padding: 52px 30px;
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -122,7 +157,7 @@ a {
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
-  height: 90vh;
+  min-height: 90vh;
   position: relative;
 }
 
@@ -133,14 +168,15 @@ a {
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 412px;
-  height: 125px;
+  width: 100%;
+  max-width: 412px;
+  height: auto;
   position: relative;
 }
 
 .alicia-valera {
   text-align: center;
-  font-size: 72px;
+  font-size: clamp(36px, 10vw, 72px);
   line-height: 120%;
   letter-spacing: -0.03em;
   font-weight: 700;
@@ -155,7 +191,7 @@ a {
 
 /* Sobre mí */
 #sobre-mi {
-  padding: 200px 200px 100px 200px;
+  padding: 100px 30px 50px 30px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -185,8 +221,8 @@ a {
   gap: 20px;
   align-items: center;
   justify-content: flex-start;
-  height: 198px;
-  max-width: 80vw;
+  height: auto;
+  max-width: 90vw;
   position: relative;
 }
 
@@ -194,6 +230,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 }
 
 .cosas li{
@@ -204,27 +241,33 @@ a {
   padding: 0.5em 1em;
   color: #e3fdee;
   margin: 5px;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .lenguaje{
-background-color: rgba(0, 141, 52, 0.7);
+  background-color: rgba(0, 141, 52, 0.7);
 }
 
 .tecnologias{
-background-color: rgba(42, 96, 65, 0.7);
+  background-color: rgba(42, 96, 65, 0.7);
 }
 
 .aptitud{
-background-color: rgba(79, 135, 85, 0.7);
+  background-color: rgba(79, 135, 85, 0.7);
 }
+
 .cv {
   color: var(--pop, #e6730f);
   font-weight: 750;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 /* proyectos! */
 #proyectos {
-  padding: 150px 200px 100px 200px;
+  padding: 100px 30px 50px 30px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -236,29 +279,35 @@ background-color: rgba(79, 135, 85, 0.7);
 
 .pestanas{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 0px;
   justify-content: center;
   flex-shrink: 0;
   position: relative;
-  max-width: 60vw;
+  width: 100%;
+  max-width: 90vw;
 }
 
 .tab {
-  width: 30vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
 }
 
 .tab button {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 16px 12px;
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .tab button:hover {
@@ -270,21 +319,22 @@ background-color: rgba(79, 135, 85, 0.7);
 }
 
 .tabcontent {
-  float: left;
   padding: 20px;
-  width: 60vw;
+  width: 100%;
   border-left: none;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .img-proyectos{
-  max-width: 30vw;
+  max-width: 100%;
+  height: auto;
   box-shadow: 0 0 30px var(--pop, #e6730f);
-  margin: 30px;
+  margin: 30px 0;
 }
 
 /* Contacto */
 #contacto {
-  padding: 150px 200px 100px 200px;
+  padding: 100px 30px 50px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -297,6 +347,7 @@ background-color: rgba(79, 135, 85, 0.7);
 
 .correo {
   color: var(--pop, #e6730f);
+  word-break: break-word;
 }
 
 #contacto form{
@@ -305,7 +356,8 @@ background-color: rgba(79, 135, 85, 0.7);
   gap: 15px;
   justify-content: center;
   align-items: center;
-  text-align:left;
+  text-align: left;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -314,19 +366,20 @@ background-color: rgba(79, 135, 85, 0.7);
   flex-direction: column;
   gap: 5px;
   color: var(--marron, #442d1b);
+  width: 100%;
 }
 
 .leches{
   padding: 10px;
   border: 1px solid var(--marron, #442d1b);
-  width: 500px;
+  width: 100%;
   border-radius: 5px;
-  background-color:  #f7ffee;
+  background-color: #f7ffee;
 }
 
 #contacto textarea{
   height: 200px;
-  resize:none;
+  resize: none;
 }
 
 .leches:focus{
@@ -336,7 +389,8 @@ background-color: rgba(79, 135, 85, 0.7);
 }
 
 #contacto button{
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -347,18 +401,16 @@ background-color: rgba(79, 135, 85, 0.7);
 }
 
 #contacto button:hover{
-  /* background-color: var(--marron, #442d1b); */
   background-color: var(--pop, #f78929);
   transition: background-color 0.3s ease;
 }
 
-
-/*footer*/
+/* footer */
 .footer {
   background: var(--marron, #442d1b);
-  padding: 40px 45px 30px 45px;
+  padding: 40px 30px 30px 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 15px;
   align-items: center;
   justify-content: space-between;
@@ -368,5 +420,144 @@ background-color: rgba(79, 135, 85, 0.7);
 .footer-text {
   color: var(--soft, #e1ecd5);
   position: relative;
-  width: 300px;
+  max-width: 300px;
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablets y pantallas medianas */
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 19px 50px;
+  }
+
+  .presentacion {
+    padding: 52px 60px;
+  }
+
+  #sobre-mi {
+    padding: 150px 100px 80px 100px;
+  }
+
+  #proyectos {
+    padding: 120px 100px 80px 100px;
+  }
+
+  .pestanas {
+    flex-direction: row;
+    max-width: 80vw;
+  }
+
+  .tab {
+    width: 30vw;
+    flex-direction: column;
+  }
+
+  .tab button {
+    text-align: left;
+    padding: 22px 16px;
+  }
+
+  .tabcontent {
+    width: 50vw;
+    padding: 20px;
+  }
+
+  .img-proyectos {
+    max-width: 40vw;
+    margin: 30px;
+  }
+
+  #contacto {
+    padding: 120px 100px 80px 100px;
+  }
+
+  .footer {
+    flex-direction: row;
+    padding: 40px 45px 30px 45px;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1024px) {
+  .presentacion {
+    padding: 52px 115px;
+  }
+
+  #sobre-mi {
+    padding: 200px 200px 100px 200px;
+  }
+
+  #proyectos {
+    padding: 150px 200px 100px 200px;
+  }
+
+  .pestanas {
+    max-width: 60vw;
+  }
+
+  .tabcontent {
+    width: 60vw;
+  }
+
+  .img-proyectos {
+    max-width: 30vw;
+  }
+
+  #contacto {
+    padding: 150px 200px 100px 200px;
+  }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+  .menu {
+    padding: 15px 20px;
+  }
+
+  .menu-items {
+    gap: 15px;
+  }
+
+  .menu-items a:not(.icon) {
+    display: none;
+  }
+
+  .presentacion {
+    padding: 52px 20px;
+    height: auto;
+    min-height: 70vh;
+  }
+
+  #sobre-mi {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .lista {
+    height: auto;
+  }
+
+  #proyectos {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .tab button {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  #contacto {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .footer {
+    padding: 30px 20px 20px 20px;
+  }
 }
