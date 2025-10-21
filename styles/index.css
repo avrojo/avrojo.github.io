@@ -6,7 +6,7 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -15,7 +15,7 @@ body{
 main,
 main * {
   box-sizing: border-box;
-} 
+}
 main {
   display: flex;
   flex-direction: column;
@@ -233,7 +233,7 @@ a {
   padding: 0;
 }
 
-.cosas li{
+.cosas li {
   list-style: none;
   align-items: center;
   justify-content: center;
@@ -244,15 +244,15 @@ a {
   font-size: clamp(14px, 3vw, 16px);
 }
 
-.lenguaje{
+.lenguaje {
   background-color: rgba(0, 141, 52, 0.7);
 }
 
-.tecnologias{
+.tecnologias {
   background-color: rgba(42, 96, 65, 0.7);
 }
 
-.aptitud{
+.aptitud {
   background-color: rgba(79, 135, 85, 0.7);
 }
 
@@ -277,7 +277,7 @@ a {
   position: relative;
 }
 
-.pestanas{
+.pestanas {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -325,7 +325,7 @@ a {
   font-size: clamp(14px, 3vw, 16px);
 }
 
-.img-proyectos{
+.img-proyectos {
   max-width: 100%;
   height: auto;
   box-shadow: 0 0 30px var(--pop, #e6730f);
@@ -350,7 +350,7 @@ a {
   word-break: break-word;
 }
 
-#contacto form{
+#contacto form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -369,7 +369,7 @@ a {
   width: 100%;
 }
 
-.leches{
+.leches {
   padding: 10px;
   border: 1px solid var(--marron, #442d1b);
   width: 100%;
@@ -377,18 +377,18 @@ a {
   background-color: #f7ffee;
 }
 
-#contacto textarea{
+#contacto textarea {
   height: 200px;
   resize: none;
 }
 
-.leches:focus{
+.leches:focus {
   box-shadow: 0 0 5px var(--pop, #e6730f);
   border: 1px solid var(--pop, #e6730f);
   outline: none;
 }
 
-#contacto button{
+#contacto button {
   width: 100%;
   max-width: 200px;
   padding: 10px;
@@ -400,7 +400,7 @@ a {
   cursor: pointer;
 }
 
-#contacto button:hover{
+#contacto button:hover {
   background-color: var(--pop, #f78929);
   transition: background-color 0.3s ease;
 }
@@ -423,7 +423,6 @@ a {
   max-width: 300px;
   font-size: clamp(14px, 3vw, 16px);
 }
-
 
 /* MEDIA QUERIES */
 
